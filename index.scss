@@ -1,0 +1,56 @@
+$white: #f3f3f3;
+$black: #151515;
+
+$link-color: blue;
+$link-color-reversed: yellow;
+
+$sans: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica,
+		ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+
+$breakpoint-sm: 37.5rem; // 600px
+$breakpoint-md: 48rem;	 // 768px
+$breakpoint-lg: 64rem;	 // 1024px
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: $white;
+	color: $black;
+	font-family: $sans;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+a {
+	color: $link-color;
+	&:hover {
+		color: rgba($link-color, 0.75);
+	}
+}
+
+.container {
+	max-width: $breakpoint-md;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.bg-dark {
+	background: $black;
+	color: $white;
+
+	a {
+		color: $link-color-reversed;
+		&:hover {
+			color: rgba($link-color-reversed, 0.75);
+		}
+	}
+}

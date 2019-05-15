@@ -1,0 +1,28 @@
+{
+  "name": "starter",
+  "version": "0.0.1",
+  "description": "Starter template to get you up and running quickly",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanwinter/starter.git"
+  },
+  "author": "Evan Winter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanwinter/starter/issues"
+  },
+  "homepage": "https://github.com/evanwinter/starter#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.20.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
