@@ -2,7 +2,7 @@
 
 Clone repository
 
-`git clone https://github.com/evanwinter/starter my-project`
+`git clone https://github.com/evanwinter/starter my-project && cd my-project`
 
 Install dependencies
 
