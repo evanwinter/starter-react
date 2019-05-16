@@ -1,4 +1,4 @@
-$white: #f3f3f3;
+$white: #fefefe;
 $black: #151515;
 
 $link-color: blue;
@@ -52,5 +52,16 @@ a {
 		&:hover {
 			color: rgba($link-color-reversed, 0.75);
 		}
+	}
+}
+
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+	@media (min-width: $breakpoint-sm) {
+		grid-template-columns: 1fr 1fr;
+		&.two-col { grid-template-columns: 1fr 1fr; }
+		&.three-col { grid-template-columns: 1fr 1fr 1fr; }
+		&.four-col { grid-template-columns: 1fr 1fr 1fr 1fr; }
 	}
 }
