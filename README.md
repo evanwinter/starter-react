@@ -12,6 +12,8 @@ Start local dev
 
 `npm start`
 
+Open a browser to localhost:1234 and you're ready to go.
+
 ## Deploy
 
 Install [Surge]('https://surge.sh')
