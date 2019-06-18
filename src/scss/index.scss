@@ -1,6 +1,9 @@
 $white: #fefefe;
 $black: #151515;
 
+$background: $black;
+$color: $white;
+
 $link-color: blue;
 $link-color-reversed: yellow;
 
@@ -10,6 +13,10 @@ $sans: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue
 $breakpoint-sm: 37.5rem; // 600px
 $breakpoint-md: 48rem;	 // 768px
 $breakpoint-lg: 64rem;	 // 1024px
+
+::-webkit-scrollbar {
+	display: none;
+}
 
 * {
 	box-sizing: border-box;
@@ -22,8 +29,8 @@ html {
 }
 
 body {
-	background-color: $white;
-	color: $black;
+	background: $background;
+	color: $color;
 	font-family: $sans;
 	margin: 0;
 	padding: 0;
@@ -38,7 +45,7 @@ a {
 }
 
 .container {
-	max-width: $breakpoint-md;
+	max-width: $breakpoint-lg;
 	margin: 0 auto;
 	padding: 1rem;
 }
@@ -63,5 +70,33 @@ a {
 		&.two-col { grid-template-columns: 1fr 1fr; }
 		&.three-col { grid-template-columns: 1fr 1fr 1fr; }
 		&.four-col { grid-template-columns: 1fr 1fr 1fr 1fr; }
+	}
+}
+
+.Search label {
+	display: block;
+}
+
+.Search input {
+	background: none;
+	border: 1px solid rgba($white, 0.25);
+	color: $white;
+	font-size: 1rem;
+	padding: 0.5rem;
+	margin: 1rem 0;
+	transition: border-color 250ms ease;
+	&:focus {
+		border: 1px solid $white;
+		outline: none;
+	}
+}
+
+.Search section#results {
+	transition: opacity 500ms ease, transform 500ms ease;
+	opacity: 1;
+	transform: translateY(0);
+	&.hidden {
+		opacity: 0;
+		transform: translateY(1rem);
 	}
 }
