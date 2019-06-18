@@ -1,6 +1,9 @@
 $white: #fefefe;
 $black: #151515;
 
+$background: $white;
+$color: $black;
+
 $link-color: blue;
 $link-color-reversed: yellow;
 
@@ -22,8 +25,8 @@ html {
 }
 
 body {
-	background-color: $white;
-	color: $black;
+	background: $background;
+	color: $color;
 	font-family: $sans;
 	margin: 0;
 	padding: 0;
