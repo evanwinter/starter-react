@@ -73,17 +73,17 @@ a {
 	}
 }
 
-.Search label {
+label {
 	display: block;
 }
 
-.Search input {
+input {
 	background: none;
 	border: 1px solid rgba($white, 0.25);
 	color: $white;
 	font-size: 1rem;
 	padding: 0.5rem;
-	margin: 1rem 0;
+	margin: 0.5rem 0;
 	transition: border-color 250ms ease;
 	&:focus {
 		border: 1px solid $white;
@@ -91,12 +91,38 @@ a {
 	}
 }
 
-.Search section#results {
-	transition: opacity 500ms ease, transform 500ms ease;
-	opacity: 1;
-	transform: translateY(0);
-	&.hidden {
-		opacity: 0;
-		transform: translateY(1rem);
+// .Search section#results {
+// 	transition: opacity 500ms ease, transform 500ms ease;
+// 	opacity: 1;
+// 	transform: translateY(0);
+// 	&.hidden {
+// 		opacity: 0;
+// 		transform: translateY(1rem);
+// 	}
+// }
+
+.RecommendedArtists {
+	margin: 2rem 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.RecommendedArtist {
+	padding: 1rem;
+	border: 1px solid rgba($white, 0.25);
+	cursor: pointer;
+	&:hover {
+		border-color: $white;
 	}
 }
+
+// .ArtistImage {
+// 	img {
+// 		border-radius: 50%;
+// 		width: 100px;
+// 		height: 100px;
+// 		display: block;
+// 	}
+// }
