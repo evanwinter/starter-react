@@ -68,3 +68,20 @@ a {
 		&.four-col { grid-template-columns: 1fr 1fr 1fr 1fr; }
 	}
 }
+
+.Card {
+	margin: 1rem;
+	padding: 1rem;
+	box-shadow: 0px 2px 10px 1px rgba($black, 0.35);
+	transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+	&.dark {
+		border: 1px solid transparent;
+		color: $white;
+		background: $black;
+	}
+	&.light {
+		border: 1px solid rgba($black, 0.2);
+		background: $white;
+		color: $black;
+	}
+}
