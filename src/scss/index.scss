@@ -2,22 +2,6 @@
 @import "baseline";
 @import "utility";
 
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  background: $background;
-  color: $color;
-  font-family: $sans;
-}
-
 button {
   background: $color-light;
   color: $color-muted;
@@ -35,44 +19,6 @@ button {
 
   &:hover {
     color: $color-dark;
-  }
-}
-
-.Seat {
-  // background: #e6e6e6;
-  border-top: 0.5px solid $color-mediumgray;
-  &:last-of-type {
-    border-bottom: 0.5px solid $color-mediumgray;
-  }
-}
-
-.toggle-trigger {
-  cursor: pointer;
-}
-
-.items {
-  // background: #f6f6f6;
-}
-
-.Dialog {
-  background: $color-light;
-
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 350ms ease;
-
-  form {
-    transform: translateY(5vh);
-    transition: transform 350ms ease;
-  }
-
-  &[data-show="true"] {
-    opacity: 1;
-    pointer-events: all;
-
-    form {
-      transform: translateY(0);
-    }
   }
 }
 
@@ -101,7 +47,36 @@ input {
   }
 }
 
-.content {
+
+.App header {
+  padding: 1rem;
+}
+
+.App main {
+  margin-top: 2rem;
+}
+
+
+
+.Item {
+  cursor: pointer;
+  display: block;
   background: $color-lightgray;
-  padding: $spacer-1;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: $color-dark;
+  text-decoration: none;
+
+  transition: background 500ms ease;
+
+  &:hover {
+    background: $color-mediumgray;
+  }
+
+}
+
+#add-item-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }

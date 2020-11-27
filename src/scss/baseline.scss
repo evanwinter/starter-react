@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -7,7 +9,12 @@ html {
 }
 
 body {
+  background: $background;
+  color: $color;
+  font-family: $sans;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,4 +23,13 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 1em 0;
+}
+
+ul {
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 0 0 0.5rem 0;
 }
