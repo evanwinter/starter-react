@@ -7,64 +7,71 @@ $color: $black;
 $link-color: blue;
 $link-color-reversed: yellow;
 
-$sans: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica,
-		ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+$sans: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+  "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+  sans-serif;
 
 $breakpoint-sm: 37.5rem; // 600px
-$breakpoint-md: 48rem;	 // 768px
-$breakpoint-lg: 64rem;	 // 1024px
+$breakpoint-md: 48rem; // 768px
+$breakpoint-lg: 64rem; // 1024px
 
 * {
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-	background: $background;
-	color: $color;
-	font-family: $sans;
-	margin: 0;
-	padding: 0;
-	line-height: 1.5;
+  background: $background;
+  color: $color;
+  font-family: $sans;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 a {
-	color: $link-color;
-	&:hover {
-		color: rgba($link-color, 0.75);
-	}
+  color: $link-color;
+  &:hover {
+    color: rgba($link-color, 0.75);
+  }
 }
 
 .container {
-	max-width: $breakpoint-md;
-	margin: 0 auto;
-	padding: 1rem;
+  max-width: $breakpoint-md;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .bg-dark {
-	background: $black;
-	color: $white;
+  background: $black;
+  color: $white;
 
-	a {
-		color: $link-color-reversed;
-		&:hover {
-			color: rgba($link-color-reversed, 0.75);
-		}
-	}
+  a {
+    color: $link-color-reversed;
+    &:hover {
+      color: rgba($link-color-reversed, 0.75);
+    }
+  }
 }
 
 .grid {
-	display: grid;
-	grid-gap: 1rem;
-	@media (min-width: $breakpoint-sm) {
-		grid-template-columns: 1fr 1fr;
-		&.two-col { grid-template-columns: 1fr 1fr; }
-		&.three-col { grid-template-columns: 1fr 1fr 1fr; }
-		&.four-col { grid-template-columns: 1fr 1fr 1fr 1fr; }
-	}
+  display: grid;
+  grid-gap: 1rem;
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: 1fr 1fr;
+    &.two-col {
+      grid-template-columns: 1fr 1fr;
+    }
+    &.three-col {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &.four-col {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 }
