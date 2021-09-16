@@ -2,7 +2,7 @@ import React from "react"
 
 export const App = () => {
   return (
-    <div class="container">
+    <div className="container">
       <h1>Hello World!</h1>
       <p>
         Quis aute id officia culpa velit culpa nostrud esse. Aute commodo et
