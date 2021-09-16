@@ -25,11 +25,5 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "alias": {
-    "ui": "./src/ui",
-    "core": "./src/core",
-    "components": "./src/ui/components",
-    "styles": "./src/ui/styles"
   }
 }

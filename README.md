@@ -1,35 +1,17 @@
+This is a pretty bare-bones starter template for a React app that I like to use. It uses Parcel as a bundler, and uses SCSS for styling.
+
 ## Setup
 
-Clone repository
+Clone the repository.
 
-`git clone https://github.com/evanwinter/starter my-project && cd my-project`
+`$ git clone https://github.com/evanwinter/starter-react my-react-app && cd my-react-app`
 
-Install dependencies
+Install the dependencies.
 
-`npm install`
+`$ npm install`
 
-Start local dev
+Run the app locally.
 
-`npm start`
+`$ npm start`
 
-Open a browser to localhost:1234 and you're ready to go.
-
-## Deploy
-
-Install [Surge]('https://surge.sh')
-
-`npm install -g surge`
-
-Create the production build
-
-`npm run build`
-
-Run `surge` from your project root
-
-`surge`
-
-It will prompt you to specify a directory to publish. Point it towards the `dist/` directory, like so:
-
-`project: /Users/.../starter/dist/`
-
-Then, just choose a domain name, and that's that.
+Open a browser and go to http://localhost:1234.
